@@ -615,7 +615,7 @@ class When extends \DateTime
             }
         }
 
-        while ($dateLooper < $this->until && count($this->occurrences) < $this->count)
+        while ($dateLooper <= $this->until && count($this->occurrences) < $this->count)
         {
             if ($this->freq === "yearly")
             {
